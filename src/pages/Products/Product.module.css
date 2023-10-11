@@ -1,0 +1,23 @@
+.goBack {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: color 300ms ease-in;
+}
+
+.goBack:hover {
+  color: #f0f;
+}
+
+.imagesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.image {
+  max-width: 150px;
+}

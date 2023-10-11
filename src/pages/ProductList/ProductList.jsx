@@ -6,7 +6,7 @@ import s from './ProductList.module.css';
 export const ProductList = () => {
   const [page, setPage] = useState(0);
   const [data, total, loading] = useFetch('', page);
-  console.log(data);
+
   return (
     <>
       <ul className={s.list}>
