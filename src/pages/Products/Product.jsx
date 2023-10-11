@@ -8,7 +8,7 @@ import s from './Product.module.css';
 export const Product = () => {
   const { id } = useParams();
   const [data, , loading] = useFetch(`/${id}`);
-  console.log('data', data);
+
   return (
     <div className={s.product}>
       <Link to={routes.PRODUCTS} className={s.goBack}>
