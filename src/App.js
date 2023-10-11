@@ -6,7 +6,7 @@ import routes from './routes';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="ProductList">
       <Header />
       <Container>
         <Routes>
