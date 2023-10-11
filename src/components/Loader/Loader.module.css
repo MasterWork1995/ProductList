@@ -1,0 +1,23 @@
+.spinnerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 15px;
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #98e2cb21;
+  border-top-color: rgb(0, 213, 255);
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
