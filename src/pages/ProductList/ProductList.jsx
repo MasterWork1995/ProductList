@@ -5,7 +5,7 @@ import s from './ProductList.module.css';
 
 export const ProductList = () => {
   const [page, setPage] = useState(0);
-  const [data, total, loading] = useFetch(`?limit=12&skip=${page * 12}`, page);
+  const [data, total, loading] = useFetch(`?limit=12&skip=${page * 12}`);
 
   return (
     <>

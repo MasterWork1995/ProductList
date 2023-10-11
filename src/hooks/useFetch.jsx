@@ -6,7 +6,7 @@ axios.defaults.baseURL = 'https://dummyjson.com/products';
 const useFetch = (url) => {
   const isInitialRender = useRef(true);
   const [data, setData] = useState([]);
-  const [total, setTotal] = useState(null);
+  const total = useRef(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -21,8 +21,8 @@ const useFetch = (url) => {
           setData(response.data);
         }
 
-        if (!total) {
-          setTotal(response.data.total);
+        if (!total.current) {
+          total.current = response.data.total;
         }
       } catch (error) {
         console.log(`Error: ${error}`);
@@ -38,7 +38,7 @@ const useFetch = (url) => {
     }
   }, [url]);
 
-  return [data, total, loading];
+  return [data, total.current, loading];
 };
 
 export default useFetch;
