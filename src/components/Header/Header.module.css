@@ -1,0 +1,26 @@
+.header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  display: block;
+  padding: 10px 0;
+  transition: color 300ms ease-in;
+}
+
+.link:hover {
+  color: #f0f;
+}
+
+.active {
+  color: #f0f;
+}
