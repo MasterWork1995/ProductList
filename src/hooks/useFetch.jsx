@@ -20,7 +20,6 @@ const useFetch = (url) => {
         } else {
           setData(response.data);
         }
-        console.log(response);
 
         if (!total) {
           setTotal(response.data.total);
